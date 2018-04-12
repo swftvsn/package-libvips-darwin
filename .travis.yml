@@ -8,10 +8,14 @@ install:
   - brew install gdk-pixbuf --without-modules --with-included-loaders="png,jpeg"
   - brew install harfbuzz --without-graphite2
   - brew install vips --with-webp --with-jpeg-turbo --without-fftw --without-poppler
+  - brew uninstall vips
+  - brew install openexr openslide cfitsio libjpeg-turbo
+  - brew install autoconf automake gtk-doc swig
   - brew info gdk-pixbuf
   - brew info harfbuzz
   - brew info vips
 script:
+  - ./build.sh
   - ./package.sh
 addons:
   artifacts:
