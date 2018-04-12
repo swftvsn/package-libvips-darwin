@@ -56,6 +56,7 @@ printf "{\n\
   \"lcms\": \"$(pkg-config --modversion lcms2)\",\n\
   \"orc\": \"$(pkg-config --modversion orc-0.4)\",\n\
   \"pango\": \"$(pkg-config --modversion pango)\",\n\
+  \"pdfium\": \"master\",\n\
   \"pixman\": \"$(pkg-config --modversion pixman-1)\",\n\
   \"png\": \"$(pkg-config --modversion libpng)\",\n\
   \"svg\": \"$(pkg-config --modversion librsvg-2.0)\",\n\

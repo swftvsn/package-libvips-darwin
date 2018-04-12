@@ -15,7 +15,9 @@ install:
   - brew info harfbuzz
   - brew info vips
 script:
-  - ./build.sh
+  - ./pdfium-build.sh
+  - ./pdfium-package.sh
+  - ./libvips-build.sh
   - ./package.sh
 addons:
   artifacts:
