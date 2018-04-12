@@ -5,6 +5,8 @@ env:
 install:
   - brew update
   - brew install advancecomp
+  - brew link python@2
+  - brew install gdk-pixbuf --without-modules --with-included-loaders="png,jpeg"
   - brew install harfbuzz --without-graphite2
   - brew install vips --with-webp --with-jpeg-turbo --without-fftw --without-poppler
   - brew uninstall vips
