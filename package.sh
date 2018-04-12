@@ -1,4 +1,4 @@
-#!/bin/sh
++#!/bin/bash
 
 # Clean working directories
 rm -rf lib include

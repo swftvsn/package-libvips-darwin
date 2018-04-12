@@ -1,4 +1,4 @@
-#!/bin/sh
++#!/bin/bash
 
 set -e
 
@@ -34,6 +34,6 @@ gclient sync --no-history
 
 cd pdfium
 
-gn gen "${BUILD_RES}" --args='pdf_bundle_freetype = true pdf_enable_v8 = false pdf_enable_xfa = false pdf_use_skia = false pdf_use_skia_paths = false is_component_build = true pdf_is_complete_lib = false pdf_is_standalone = false use_sysroot = false'
+gn gen "${BUILD_RES}" --args='pdf_bundle_freetype = true pdf_enable_v8 = false pdf_enable_xfa = false pdf_use_skia = false pdf_use_skia_paths = false is_component_build = false pdf_is_complete_lib = true use_sysroot = false'
 
 ninja -C "${BUILD_RES}"

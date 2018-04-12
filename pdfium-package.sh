@@ -1,4 +1,4 @@
-#!/bin/sh
++#!/bin/bash
 
 set -e
 
@@ -28,10 +28,10 @@ mkdir -p "${TARGET_PDFIUM}/include"
 find ${BUILD_RES} -name '*.a' -not -path "**/testing/*" -not -path "**/build/*" -not -name 'libtest_support.a' -exec cp {} ${TARGET_PDFIUM}/lib/pdfium-obj \;
 
 # there are a couple of shared support libs we need too
-cp ${BUILD_RES}/libicuuc* ${TARGET_PDFIUM}/lib
-cp ${BUILD_RES}/libicui18n* ${TARGET_PDFIUM}/lib
+# cp ${BUILD_RES}/libicuuc* ${TARGET_PDFIUM}/lib
+# cp ${BUILD_RES}/libicui18n* ${TARGET_PDFIUM}/lib
 # cp ${BUILD_RES}/libc++.so ${TARGET_PDFIUM}/lib
-cp /usr/lib/libc++.dylib ${TARGET_PDFIUM}/lib
+# cp /usr/lib/libc++.dylib ${TARGET_PDFIUM}/lib
 
 cp public/*.h ${TARGET_PDFIUM}/include
 

@@ -1,4 +1,4 @@
-#!/bin/sh
++#!/bin/bash
 
 # Clean working directories
 export GI_TYPELIB_PATH=/usr/local/lib/girepository-1.0:$VIPSHOME/lib/girepository-1.0
