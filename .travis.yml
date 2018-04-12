@@ -4,7 +4,7 @@ env:
   - COLUMNS=240
 install:
   - brew update
-  - brew link --overwrite python@2
+  - brew link --overwrite python
   - brew install advancecomp
   - brew install gdk-pixbuf --without-modules --with-included-loaders="png,jpeg"
   - brew install harfbuzz --without-graphite2
