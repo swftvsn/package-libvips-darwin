@@ -2,17 +2,7 @@
 
 set -e
 
-PLATFORM=darwin-x64
-VERSION_PDFIUM=master
-
-BASE=$(pwd)
-BUILD_DIR="${BASE}/build"
-PATCH_DIR="${BASE}/patches"
-BUILD_PKG="${BASE}/package"
-
-BUILD_RES="out/Release_${PLATFORM}"
-
-TARGET_PDFIUM="${BASE}/pdfium"
+. config.sh
 
 cd ${BUILD_DIR}/pdfium
 

@@ -19,7 +19,7 @@ script:
   - ./pdfium-build.sh
   - ./pdfium-package.sh
   - ./libvips-build.sh
-  - ./package.sh
+  - ./libvips-package-sharp-tar.sh
 addons:
   artifacts:
     s3_region: eu-west-1

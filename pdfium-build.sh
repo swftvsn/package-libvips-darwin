@@ -2,23 +2,10 @@
 
 set -e
 
-PLATFORM=darwin-x64
-LIBNAME="libpdfium-dev"
-VERSION_PDFIUM=master
+. config.sh
 
-git=$(which git)
-
-BASE=$(pwd)
-BUILD_DIR="${BASE}/build"
-PATCH_DIR="${BASE}/patches"
-BUILD_PKG="${BASE}/package"
-
-BUILD_RES="out/Release_${PLATFORM}"
-
-TARGET_PDFIUM="${BASE}/pdfium"
-
-rm -rf ${BUILD_DIR}
-mkdir -p ${BUILD_DIR}
+# rm -rf ${BUILD_DIR}
+# mkdir -p ${BUILD_DIR}
 cd ${BUILD_DIR}
 
 DEPOT_TOOLS="${BUILD_DIR}/depot_tools"
