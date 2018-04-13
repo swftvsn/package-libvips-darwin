@@ -4,8 +4,8 @@ set -e
 
 . config.sh
 
-# rm -rf ${BUILD_DIR}
-# mkdir -p ${BUILD_DIR}
+rm -rf ${BUILD_DIR}
+mkdir -p ${BUILD_DIR}
 cd ${BUILD_DIR}
 
 DEPOT_TOOLS="${BUILD_DIR}/depot_tools"
